@@ -2,7 +2,7 @@ import { useLoaderData } from 'react-router-dom';
 import { fetchData } from '../helpers';
 
 export function dashBoardLoader() {
-  const userName = fetchData('username');
+  const userName = fetchData('userName');
   return { userName };
 }
 
