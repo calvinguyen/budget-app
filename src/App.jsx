@@ -5,7 +5,7 @@ import Dashboard, { dashBoardAction, dashBoardLoader } from './views/Dashboard';
 import Error from './views/Error';
 import Main, { mainLoader } from './layouts/Main';
 import { logoutAction } from './actions/logout';
-import Expenses, { expensesLoader } from './views/Expenses';
+import Expenses, { expensesAction, expensesLoader } from './views/Expenses';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +25,7 @@ const router = createBrowserRouter([
         path: "expenses",
         element: <Expenses />,
         loader: expensesLoader,
+        action: expensesAction,
         errorElement: <Error />,
       },
       {
