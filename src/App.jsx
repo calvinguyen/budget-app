@@ -6,6 +6,7 @@ import Error from './views/Error';
 import Main, { mainLoader } from './layouts/Main';
 import { logoutAction } from './actions/logout';
 import Expenses, { expensesAction, expensesLoader } from './views/Expenses';
+import Budget, { budgetAction, budgetLoader } from './views/Budget';
 
 const router = createBrowserRouter([
   {
@@ -22,10 +23,17 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: "expenses",
+        path: 'expenses',
         element: <Expenses />,
         loader: expensesLoader,
         action: expensesAction,
+        errorElement: <Error />,
+      },
+      {
+        path: 'budget/:id',
+        element: <Budget />,
+        loader: budgetLoader,
+        action: budgetAction,
         errorElement: <Error />,
       },
       {
