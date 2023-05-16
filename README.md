@@ -2,6 +2,10 @@
 
 A MERN stack app that allows user to budget their expenses.
 
+## TODO Features
+- Implement Backend (App currently uses localStorage)
+- Implement Budget History Page
+
 ## Getting Started
 
 ```
@@ -14,6 +18,6 @@ npm start
 ## Built with
 
 - [React](https://reactjs.org/)
-- [Material-icons](https://mui.com/material-ui/icons/)
+- [Heroicons/react](https://www.npmjs.com/package/@heroicons/react)
 - [react-router-dom](https://reactrouter.com/en/main/)
 - [react-toastify](https://www.npmjs.com/package/react-toastify)
