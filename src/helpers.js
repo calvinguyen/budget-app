@@ -1,8 +1,7 @@
 const generateRandomColor = () => {
-  const existingBudgetLength = fetchData('budgets')?.
-    length ?? 0;
-  return `${existingBudgetLength * 34} 65% 50%`
-}
+  const existingBudgetLength = fetchData('budgets')?.length ?? 0;
+  return `${existingBudgetLength * 34} 65% 50%`;
+};
 
 // Local storage
 export const fetchData = (key) => {
@@ -15,7 +14,7 @@ export const createBudget = ({ name, amount }) => {
     name: name,
     createdAt: Date.now(),
     amount: +amount,
-    color: generateRandomColor()
+    color: generateRandomColor(),
   };
   const existingBudgets = fetchData('budgets') ?? [];
   return localStorage.setItem(
